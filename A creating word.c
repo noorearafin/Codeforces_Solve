@@ -8,17 +8,12 @@ int main()
     for(int i=0;i<t;i++){
         char str[size];
         char str2[size];
-        scanf("%s",&str);
-        scanf("%s",&str2);
+        scanf("%s %s",&str,&str2);
         char temp;
         temp = str[0];
         str[0] = str2[0];
         str2[0] = temp;
         printf("%s %s\n",str,str2);
-
-        //str[0]=str2[0]='\0';
-
-
     }
 
     return 0;
